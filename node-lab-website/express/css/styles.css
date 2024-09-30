@@ -1,0 +1,41 @@
+p {
+    font-size: large;
+    font-style: italic;
+    color: rgb(38, 38, 38);
+}
+
+.MY_DIV_CLASS {
+    text-shadow: 3px 3px #1616161e;
+}
+
+.MY_IMG_CLASS {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.MY_LI_CLASS {
+    text-decoration: line-through;
+}
+
+
+.map-container {
+    position: relative;
+}
+
+.car-animation {
+    position: absolute;
+    top: 47%;
+    width: 3%;
+    bottom: 10px;
+    left: -120px;
+    animation: moveCar 7s infinite alternate;
+}
+
+@keyframes moveCar {
+    0% {
+        left: -120px;
+    }
+    100% {
+        left: calc(100% + 120px); 
+    }
+}
