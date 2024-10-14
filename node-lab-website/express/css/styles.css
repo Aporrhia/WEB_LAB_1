@@ -1,9 +1,11 @@
+/* Paragraph style */
 p {
     font-size: large;
     font-style: italic;
     color: rgb(38, 38, 38);
 }
 
+/* Other classes */
 .MY_DIV_CLASS {
     text-shadow: 3px 3px #1616161e;
 }
@@ -17,7 +19,7 @@ p {
     text-decoration: line-through;
 }
 
-
+/* Car animation with keyframes */
 .map-container {
     position: relative;
 }

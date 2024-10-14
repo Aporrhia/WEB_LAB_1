@@ -1,4 +1,5 @@
-
+// JS event that hides/shows sold out months
+// Also uses two other functions to animate the sold out months
 document.getElementById("toggleButton").addEventListener("click", function() {
     const soldOutItems = document.querySelectorAll(".MY_LI_CLASS");
     let isHidden = soldOutItems[0].style.display === "none";
@@ -22,6 +23,8 @@ document.getElementById("toggleButton").addEventListener("click", function() {
     this.textContent = isHidden ? "Hide Sold Out" : "Show Sold Out";
 });
 
+// Other effect functions with time duration:
+// Fade in/out functions
 function fadeIn(element, duration) {
     element.style.opacity = 0;
     let opacity = 0;
@@ -51,6 +54,7 @@ function fadeOut(element, duration) {
     }, interval);
 }
 
+// Slide down/up functions
 function slideDown(element, duration) {
     element.style.height = "0px";
     element.style.overflow = "hidden";
@@ -87,6 +91,7 @@ function slideUp(element, duration) {
 }
 
 
+// This effect adds smooth scrolling for the div once it is in the viewport
 const elements = document.querySelectorAll('.MY_DIV_CLASS'); 
 
 function handleScroll() {
